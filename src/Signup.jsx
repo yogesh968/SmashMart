@@ -5,6 +5,10 @@ import { supabase } from './supabaseClient'
 function SignUp() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [chlo,matchlo]=useState(false)
+  const handle_button=()=>{
+    matchlo(!chlo)
+  }
 
   const handleSignup = async (e) => {
     e.preventDefault()
@@ -27,7 +31,10 @@ function SignUp() {
   }
 
   return (
-    <form onSubmit={handleSignup}>
+    <>
+    <button  class="handle_bton" onClick={handle_button}>SIGN UP </button>
+   {chlo ? ( <form onSubmit={handleSignup} >
+     
       <label id='email'>Email:</label>
       <input 
          id="email"
@@ -49,8 +56,12 @@ function SignUp() {
         minLength={6}
       />
       <button type="submit" >Sign Up</button>
-    </form>
+    </form> ) :""
+    
+   }
+    
+    </>
   )
 }
 
-export default SignUp
+export default SignUp;

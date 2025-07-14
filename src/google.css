@@ -1,0 +1,15 @@
+.bton{
+    background-color: rgb(48, 19, 210);
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.google-img{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
