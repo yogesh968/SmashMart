@@ -1,0 +1,93 @@
+/* Fullscreen Pink-Black-Red Gradient Login */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .login-fullpage {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .login-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 10px;
+    color: #ff4b2b;
+    font-size: 2rem;
+  }
+  
+  .login-card p {
+    margin-bottom: 25px;
+    color: #444;
+    font-size: 0.95rem;
+  }
+  
+  .form-group {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #222;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border: 2px solid #ff416c;
+  }
+  
+  .login-button {
+    width: 100%;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  .login-button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to left, #ff416c, #ff4b2b);
+  }
+  

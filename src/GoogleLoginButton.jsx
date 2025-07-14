@@ -1,6 +1,7 @@
-// GoogleLoginButton.jsx
+
 import React from "react";
-import { supabase } from "./supabaseClient"; // adjust path if needed
+import { supabase } from "./supabaseClient";  
+import './google.css'
 
 function GoogleLoginButton() {
   const handleGoogleLogin = async () => {
@@ -16,7 +17,7 @@ function GoogleLoginButton() {
 
   return (
     <button onClick={handleGoogleLogin} class="bton">
-      Sign in with Google
+      <img src="https://imag.malavida.com/mvimgbig/download-fs/google-go-20419-0.jpg" class="google-img"/> Sign in with Google
     </button>
   );
 }
