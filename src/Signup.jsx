@@ -34,7 +34,7 @@ function SignUp() {
     <>
     <button  class="handle_bton" onClick={handle_button}>SIGN UP </button>
    {chlo ? ( <form onSubmit={handleSignup} >
-     
+    <div>
       <label id='email'>Email:</label>
       <input 
          id="email"
@@ -43,8 +43,8 @@ function SignUp() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-      />
-      <label id='pass'>Password:</label>
+      /></div>
+      <div><label id='pass'>Password:</label>
 
       <input
       id='pass'
@@ -54,7 +54,7 @@ function SignUp() {
         onChange={(e) => setPassword(e.target.value)}
         required
         minLength={6}
-      />
+      /></div>
       <button type="submit" >Sign Up</button>
     </form> ) :""
     
