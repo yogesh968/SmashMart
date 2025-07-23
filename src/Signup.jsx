@@ -17,6 +17,7 @@ function SignUp() {
       alert("Email and password are required.")
       return
     }
+  
 
     const { data, error } = await supabase.auth.signUp({
       email: email,
@@ -43,6 +44,7 @@ function SignUp() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
+        class="sign-input "
       /></div>
       <div><label id='pass'>Password:</label>
 
@@ -54,10 +56,11 @@ function SignUp() {
         onChange={(e) => setPassword(e.target.value)}
         required
         minLength={6}
-      /></div>
+      /></div>                              
+
       <button type="submit" >Sign Up</button>
     </form> ) :""
-    
+  
    }
     
     </>
