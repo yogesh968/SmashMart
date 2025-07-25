@@ -9,6 +9,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    
     if (!email || !password) {
       alert("Please fill in both email and password");
       return;
@@ -33,7 +34,7 @@ function Login() {
         <p>Enter your credentials to get started</p>
 
         <div className="form-group">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
@@ -44,6 +45,7 @@ function Login() {
             required
           />
         </div>
+
 
         <div className="form-group">
           <label htmlFor="password">Password</label>

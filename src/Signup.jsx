@@ -34,19 +34,23 @@ function SignUp() {
   return (
     <>
     <button  class="handle_bton" onClick={handle_button}>SIGN UP </button>
-   {chlo ? ( <form onSubmit={handleSignup} >
-    <div>
+   {chlo  ? ( <form onSubmit={handleSignup}  >
+    <div >
       <label id='email'>Email:</label>
+
       <input 
+
          id="email"
+
         type="email"
+
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
         class="sign-input "
       /></div>
-      <div><label id='pass'>Password:</label>
+      <div><label id='pass'>Password: </label>
 
       <input
       id='pass'
@@ -60,7 +64,7 @@ function SignUp() {
 
       <button type="submit" >Sign Up</button>
     </form> ) :""
-  
+
    }
     
     </>
